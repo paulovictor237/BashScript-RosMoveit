@@ -2,11 +2,10 @@
 
 # +---------------------------- Minhas Configuracoes ------------------------------+
 # !! ROS FILES !!
-echo ""
-echo "-------------------------- Choose desired ROS distro -------------------------"
-echo " 1 - ros_melodic for melodic workspace"
-echo " 2 - ros_cristal for cristal workspace"
-echo "---------------------------------------END------------------------------------"
+# echo "-------------------------- Choose desired ROS distro -------------------------"
+# echo " 1 - ros_melodic for melodic workspace"
+# echo " 2 - ros_cristal for cristal workspace"
+# echo "---------------------------------------END------------------------------------"
 
 ros_melodic()
 {
