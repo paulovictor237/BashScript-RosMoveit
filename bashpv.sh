@@ -7,11 +7,15 @@
 # echo " 2 - ros_cristal for cristal workspace"
 # echo "---------------------------------------END------------------------------------"
 
+export ROS_DISTRO=melodic
+source /opt/ros/melodic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
 ros_melodic()
 {
   export ROS_DISTRO=melodic
   source /opt/ros/melodic/setup.bash
-  source /home/peve/catkin_ws/devel/setup.bash
+  source ~/catkin_ws/devel/setup.bash
 }
 
 ros_cristal()
@@ -19,10 +23,7 @@ ros_cristal()
   export ROS_DISTRO=crystal
   source /opt/ros/crystal/setup.bash
 }
-# !! VREP FILES !!
-export ROS_CATKIN_WS='/home/peve/catkin_ws'
-export VREP_ROOT='/home/peve/vrep'
-alias vrep=/home/peve/vrep/vrep.sh
+
 # !! COMANDOS !!
 alias usb_config='sudo chmod 777 /dev/ttyUSB0'
 alias ros_path='echo $ROS_PACKAGE_PATH'
