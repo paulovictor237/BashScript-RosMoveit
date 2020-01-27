@@ -70,4 +70,3 @@ function pv_help { printf "
 "
 }
 # !! OUTROS !!
-# source ~/catkin_rosi_def/devel/setup.bash
