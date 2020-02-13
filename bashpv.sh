@@ -60,7 +60,7 @@ function pv_help { printf "
 ╠════════════════════╬═════════════════════════════╣
 ║ $ urdf_view        ║ Visualizar o URDF em 3D     ║
 ╠════════════════════╬═════════════════════════════╣
-║ $ xacro_to_graphiz ║ Visualizar o XACRO em 3D    ║
+║ $ xacro_to_graphiz ║ Cria um grafico em PDF      ║
 ╠════════════════════╬═════════════════════════════╣
 ║ $ check_xacro      ║ Verificar erros no xacro    ║
 ╠════════════════════╬═════════════════════════════╣
