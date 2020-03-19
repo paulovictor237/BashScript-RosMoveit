@@ -1,34 +1,24 @@
 
 
-# +---------------------------- Minhas Configuracoes ------------------------------+
-# !! ROS FILES !!
-# echo "-------------------------- Choose desired ROS distro -------------------------"
-# echo " 1 - ros_melodic for melodic workspace"
-# echo " 2 - ros_cristal for cristal workspace"
-# echo "---------------------------------------END------------------------------------"
+# +---------------------------- Minhas Configuracoes -----------------------------+
+#              ╔══════════════════════════════════════════════════╗
+#              ║  Copyright (C) 2020 Paulo Victor Duarte          ║
+#              ║  Atalhos e comandos para auxiliar no uso do ROS  ║
+#              ╚══════════════════════════════════════════════════╝
+# +-------------------------------------------------------------------------------+
 
+# !! DIRETORIOS !!
 export ROS_DISTRO=melodic
 source /opt/ros/melodic/setup.bash
-source ~/catkin_ws/devel/setup.bash
-
-ros_melodic()
-{
-  export ROS_DISTRO=melodic
-  source /opt/ros/melodic/setup.bash
-  source ~/catkin_ws/devel/setup.bash
-}
-
-ros_cristal()
-{
-  export ROS_DISTRO=crystal
-  source /opt/ros/crystal/setup.bash
-}
+#source ~/catkin_ws/devel/setup.bash
+#source ~/ws_moveit/devel/setup.bash
 
 # !! COMANDOS !!
 alias usb_config='sudo chmod 777 /dev/ttyUSB0'
 alias ros_path='echo $ROS_PACKAGE_PATH'
 alias moveit_new='roslaunch moveit_setup_assistant setup_assistant.launch'
 alias bash_update='source ~/.bashrc'
+
 # !! FUNCOES !!
 function urdf_view {
   roslaunch urdf_tutorial display.launch model:=$1
@@ -46,10 +36,6 @@ function pv_help { printf "
 ╔══════════════════════════════════════════════════╗
 ║                     COMANDOS                     ║
 ╠════════════════════╦═════════════════════════════╣
-║ $ ros_melodic      ║ Melodic Workspace           ║
-╠════════════════════╬═════════════════════════════╣
-║ $ ros_cristal      ║ Cristal Workspace           ║
-╠════════════════════╬═════════════════════════════╣
 ║ $ usb_config       ║ Ativa a configuracao USB    ║
 ╠════════════════════╬═════════════════════════════╣
 ║ $ ros_path         ║ Caminhos dos pacotes ROS    ║
@@ -70,5 +56,5 @@ function pv_help { printf "
 ╚════════════════════╩═════════════════════════════╝
 "
 }
-# !! OUTROS !!
+# +----------------------------------- THE END -----------------------------------+
 
