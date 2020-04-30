@@ -10,7 +10,7 @@
 # !! DIRETORIOS !!
 export ROS_DISTRO=melodic
 source /opt/ros/melodic/setup.bash
-#source ~/ws_moveit/devel/setup.bash
+source ~/ws_moveit/devel/setup.bash
 
 # !! COMANDOS !!
 alias usb_config='sudo chmod 777 /dev/ttyUSB0'
