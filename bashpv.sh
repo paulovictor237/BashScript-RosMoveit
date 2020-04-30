@@ -10,7 +10,6 @@
 # !! DIRETORIOS !!
 export ROS_DISTRO=melodic
 source /opt/ros/melodic/setup.bash
-#source ~/catkin_ws/devel/setup.bash
 #source ~/ws_moveit/devel/setup.bash
 
 # !! COMANDOS !!
