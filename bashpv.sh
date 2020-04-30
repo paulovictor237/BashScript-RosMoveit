@@ -7,6 +7,7 @@
 # echo " 2 - ros_cristal for cristal workspace"
 # echo "---------------------------------------END------------------------------------"
 
+export LC_NUMERIC=en_US.UTF-8
 export ROS_DISTRO=melodic
 source /opt/ros/melodic/setup.bash
 source ~/catkin_ws/devel/setup.bash
