@@ -37,7 +37,7 @@ wstool update -t .
 cd ~/ws_moveit/src
 rosdep install -y --from-paths . --ignore-src --rosdistro melodic
 cd ~/ws_moveit
-catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
+catkin config --extend /opt/ros/melodic --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin build
 source ~/ws_moveit/devel/setup.bash
 echo 'source ~/ws_moveit/devel/setup.bash' >> ~/.bashrc
