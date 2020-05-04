@@ -6,6 +6,9 @@
 # $ chmod +x instalador.sh
 # $ ./instalador.sh
 
+# sudo apt-get install -y whatever
+# echo "y" | sudo apt-get install edamame_biscuit
+
 echo "Aguarde a instalação"
 
 cat bashpv.sh >> ~/.bashrc

@@ -1,35 +1,37 @@
 #!/usr/bin/env bash
 
-echo "Aguarde a instalação"
-
-cat bashpv.sh >> ~/.bashrc
+#instalar os comandos bash
+sudo cat bashpv.sh >> ~/.bashrc
 source ~/.bashrc
 
+#instalar o Moveit-ROS-FULL
+echo "Aguarde a instalação"
+
 #Setup your sources.list
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' -y
 # Set up your keys
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654 -y
 #Installation
-sudo apt update
-sudo apt install ros-melodic-desktop-full
+sudo apt update -y
+sudo apt install ros-melodic-desktop-full -y
 apt search ros-melodic
 #Environment setup
 # echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 #Dependencies for building packages
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 #Initialize rosdep
-sudo apt install python-rosdep
+sudo apt install python-rosdep -y
 sudo rosdep init
 rosdep update
 #MOVEIT
-sudo apt-get install ros-melodic-moveit
+sudo apt-get install ros-melodic-moveit -y
 #Getting Started
 rosdep update
-sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get update -y
+sudo apt-get dist-upgrade -y
 #ROS Build
-sudo apt-get install ros-melodic-catkin python-catkin-tools
+sudo apt-get install ros-melodic-catkin python-catkin-tools -y
 #Create A Catkin Workspace
 mkdir -p ~/ws_moveit/src
 cd ~/ws_moveit/src
@@ -48,3 +50,6 @@ catkin build
 source ~/.bashrc
 
 echo "Instalação completa"
+
+exit 1
+# FIM
