@@ -1,15 +1,25 @@
-# .bashrc.sh
+# Bashrc
+
 Atalhos e comandos para auxiliar no uso do ROS
 
 1. Faça o Download do arquivo e descopacte a pasta.
-2. Dentro da pasta de arquivos abra o terminal e digite.
-```sh
-$ cat bashpv.sh >> ~/.bashrc
-$ source ~/.bashrc
-```
-Este comando irá escrever novas linhas de comando ao **final** do seu arquivo bashrc.
+2. Dentro da pasta de arquivos abra o terminal e digite ...
 
-Para abrir a lista de comandos digite.
+## Se você já possui o ROS e o Moveit!
+
+Este comando irá escrever novas linhas de comando ao **Final** do seu arquivo bashrc.
 ```sh
-$ pv_help
+bash instalador.sh
+```
+
+## Se você não possui o ROS e o Moveit!
+
+Este comando irá instalar todos os pacotes necessários para o ROS e Moveit! além de adicionar os novos comandos.
+```sh
+bash instalador_moveit_completo.sh
+```
+
+Para abrir a lista dos novos comandos digite.
+```sh
+pv_help
 ```
