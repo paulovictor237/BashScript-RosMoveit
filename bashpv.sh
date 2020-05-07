@@ -54,6 +54,8 @@ function pv_help { printf "
 ╠════════════════════╬═════════════════════════════╣
 ║ $ urdf_to_xacro    ║ Converte um URDF para XACRO ║
 ╠════════════════════╬═════════════════════════════╣
+║ $ rqt_graph        ║ Mapeamento entre os Nodes   ║
+╠════════════════════╬═════════════════════════════╣
 ║ $ pv_help          ║ Imprime a lista de comandos ║
 ╚════════════════════╩═════════════════════════════╝
 "
