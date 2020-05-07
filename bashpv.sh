@@ -23,13 +23,13 @@ alias bash_update='source ~/.bashrc'
 function urdf_view {
   roslaunch urdf_tutorial display.launch model:=$1
 }
-function xacro_to_graphiz {
+function xacro_to_pdf {
   urdf_to_graphiz <(xacro --inorder $1)
 }
 function check_xacro {
   check_urdf <(xacro --inorder $1)
 }
-function generate_urdf {
+function urdf_to_xacro {
 	rosrun xacro xacro --inorder -o "$1.urdf" "$1.xacro"
 }
 function pv_help { printf "
@@ -46,11 +46,13 @@ function pv_help { printf "
 ╠════════════════════╬═════════════════════════════╣
 ║ $ urdf_view        ║ Visualizar o URDF em 3D     ║
 ╠════════════════════╬═════════════════════════════╣
-║ $ xacro_to_graphiz ║ Cria um grafico em PDF      ║
+║ $ xacro_to_pdf     ║ Cria um grafico em PDF      ║
+╠════════════════════╬═════════════════════════════╣
+║ $ check_urdf       ║ Verificar erros no urdf     ║
 ╠════════════════════╬═════════════════════════════╣
 ║ $ check_xacro      ║ Verificar erros no xacro    ║
 ╠════════════════════╬═════════════════════════════╣
-║ $ generate_urdf    ║ Gera um novo URDF           ║
+║ $ urdf_to_xacro    ║ Converte um URDF para XACRO ║
 ╠════════════════════╬═════════════════════════════╣
 ║ $ pv_help          ║ Imprime a lista de comandos ║
 ╚════════════════════╩═════════════════════════════╝
