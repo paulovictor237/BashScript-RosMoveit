@@ -29,8 +29,11 @@ function xacro_to_pdf {
 function check_xacro {
   check_urdf <(xacro --inorder $1)
 }
-function urdf_to_xacro {
-	rosrun xacro xacro --inorder -o "$1.urdf" "$1.xacro"
+function xacro_to_urdf {
+  echo "Entre com o nome do arquivo URDF"
+  read nome
+  echo "Criado arquivo, $nome.urdf"
+  rosrun xacro xacro $1 > $nome.urdf
 }
 function pv_help { printf "
 ╔══════════════════════════════════════════════════╗
@@ -52,7 +55,7 @@ function pv_help { printf "
 ╠════════════════════╬═════════════════════════════╣
 ║ $ check_xacro      ║ Verificar erros no xacro    ║
 ╠════════════════════╬═════════════════════════════╣
-║ $ urdf_to_xacro    ║ Converte um URDF para XACRO ║
+║ $ xacro_to_urdf    ║ Converte um XACRO para URDF ║
 ╠════════════════════╬═════════════════════════════╣
 ║ $ rqt_graph        ║ Mapeamento entre os Nodes   ║
 ╠════════════════════╬═════════════════════════════╣

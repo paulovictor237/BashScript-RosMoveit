@@ -8,6 +8,6 @@
 | xacro_to_pdf  | Cria um grafico em PDF            | urdf_to_graphiz <(xacro --inorder $1)                   |
 | check_urdf    | Verificar erros no urdf           | check_urdf                                              |
 | check_xacro   | Verificar erros no xacro          | check_urdf <(xacro --inorder $1)                        |
-| urdf_to_xacro | Converte um URDF para XACRO       | rosrun xacro xacro --inorder -o "$1.urdf" "$1.xacro"    |
+| xacro_to_urdf | Converte um XACRO para URDF       | rosrun xacro xacro $1 > $nome.urdf    |
 | rqt_graph     | Mapeamento entre os Nodes         | rqt_graph                                               |
 | pv_help       | Imprime a lista de comandos       | printf ".."                                             |
