@@ -24,5 +24,6 @@ Para abrir a lista dos novos comandos digite.
 pv_help
 ```
 # Lista de Comandos
-Abaixo o link para a lista de comandos
+Abaixo o link para a lista completa dos comandos disponíveis.
+
 [Comandos](command_list.md)
