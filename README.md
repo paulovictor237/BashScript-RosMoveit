@@ -23,3 +23,6 @@ Para abrir a lista dos novos comandos digite.
 ```sh
 pv_help
 ```
+# Lista de Comandos
+Abaixo o link para a lista de comandos
+[Comandos](command_list.md)
