@@ -24,15 +24,15 @@ function urdf_view {
   roslaunch urdf_tutorial display.launch model:=$1
 }
 function xacro_to_pdf {
-  urdf_to_graphiz <(xacro --inorder $1)
+  urdf_to_graphiz <(xacro $1)
 }
 function check_xacro {
-  check_urdf <(xacro --inorder $1)
+  check_urdf <(xacro $1)
 }
 function xacro_to_urdf {
   echo "Entre com o nome do arquivo URDF"
   read nome
-  echo "Criado arquivo, $nome.urdf"
+  echo "Criado arquivo: $nome.urdf"
   rosrun xacro xacro $1 > $nome.urdf
 }
 function pv_help { printf "
