@@ -8,7 +8,7 @@
 # +-------------------------------------------------------------------------------+
 
 # !! DIRETORIOS !!
-export LC_NUMERIC=en_US.UTF-8
+export LC_NUMERIC="en_US.UTF-8"
 export ROS_DISTRO=melodic
 source /opt/ros/melodic/setup.bash
 source ~/ws_moveit/devel/setup.bash
