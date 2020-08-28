@@ -17,4 +17,4 @@ pv_help
 # Lista de Comandos
 Abaixo o link para a lista completa dos comandos disponíveis.
 
-[Comandos](command_list.md)
+[Comandos](arquivos/command_list.md)

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #instalar os comandos bash
-sudo cat bashpv.sh >> ~/.bashrc
+sudo cat arquivos/bashpv.sh >> ~/.bashrc
 source ~/.bashrc
 
 #instalar o Moveit-ROS-FULL
