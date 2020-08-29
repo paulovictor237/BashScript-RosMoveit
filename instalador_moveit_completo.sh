@@ -20,6 +20,8 @@ apt search ros-melodic
 source ~/.bashrc
 #Dependencies for building packages
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
+#ros-melodic-serial
+sudo apt-get install ros-melodic-serial -y
 #Initialize rosdep
 sudo apt install python-rosdep -y
 sudo rosdep init
