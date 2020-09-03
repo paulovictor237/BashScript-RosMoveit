@@ -1,20 +1,17 @@
-# Bashrc
+# BashScript RosMoveit
 
-Atalhos e comandos para auxiliar no uso do ROS
+Este BashScript  foi desenvolvido com a versão recomendada (2020) ROS1 Melodic Morenia para a distribuição Linux Ubuntu Budgie 18.04 LTS, e compilado com a extensão catkin-tools (catkin build). Vale o registro que a última versão do ROS1 será a Noetic Ninjemys, que no momento se encontra em fase Beta. Existem também o projeto Moveit 2 para o ROS2, mas ainda está em processo de migração.
 
-1. Faça o Download do arquivo e descopacte a pasta.
-2. Dentro da pasta de arquivos abra o terminal e digite ...
+# A. Software prerequisites
 
-Este comando irá instalar todos os pacotes necessários para o ROS e Moveit! além de adicionar os novos comandos e corrigir bugs.
-```sh
-bash instalador_moveit_completo.sh
-```
+1. Linux Ubuntu 18.04 LTS
 
-Para abrir a lista dos novos comandos digite.
-```sh
-pv_help
-```
-# Lista de Comandos
-Abaixo o link para a lista completa dos comandos disponíveis.
+# B. Installation
 
-[Comandos](arquivos/command_list.md)
+   1. Faça o Download do arquivo e descopacte a pasta
+   2. Dentro da pasta de arquivos abra o terminal
+   3. Digite  ```$ bash bash_script_ros.sh```
+   4. A instalação pode demorar até 40 minutos, aguarde...
+   5. Para abrir a lista dos novos comandos digite  ```$ peve_help```
+
+**Copyright &copy; 2020, Paulo Victor Duarte, All rights reserved.**

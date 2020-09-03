@@ -35,7 +35,11 @@ function xacro_to_urdf {
   echo "Criado arquivo: $nome.urdf"
   rosrun xacro xacro $1 > $nome.urdf
 }
-function pv_help { printf "
+function peve_help { printf "
+------------- Informacoes de sistema ---------------
+ 1 - Seu melodic workspace foi criado na pasta:
+ > ~/ws_moveit
+----------------------- END ------------------------
 ╔══════════════════════════════════════════════════╗
 ║                     COMANDOS                     ║
 ╠════════════════════╦═════════════════════════════╣
@@ -59,7 +63,7 @@ function pv_help { printf "
 ╠════════════════════╬═════════════════════════════╣
 ║ $ rqt_graph        ║ Mapeamento entre os Nodes   ║
 ╠════════════════════╬═════════════════════════════╣
-║ $ pv_help          ║ Imprime a lista de comandos ║
+║ $ peve_help        ║ Imprime a lista de comandos ║
 ╚════════════════════╩═════════════════════════════╝
 "
 }

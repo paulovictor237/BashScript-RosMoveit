@@ -51,7 +51,14 @@ catkin build
 # echo 'source ~/ws_moveit/devel/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
-echo "Instalação completa"
+echo "--------------- Instalação completa ----------------"
+echo " 1 - Seu melodic workspace foi criado na pasta:"
+echo " > ~/ws_moveit"
+echo " 2 - Novos comandos foram adicionados ao seu:"
+echo " > ~/.bashrc"
+echo " 3 - Para abrir a lista dos novos comandos digite:"
+echo " > peve_help"
+echo "----------------------- END ------------------------"
 
 exit 1
 # FIM
